@@ -118,3 +118,18 @@ elif counter > 1:
 
 # Fourth Problem
 
+userinput = int(input())
+
+if userinput % 4 == 0:
+    if userinput > 999:
+        counter = str(userinput)
+        counter = int(counter[2] + counter[3])
+        if counter == 00:
+            if userinput % 400 == 0:
+                print(f'{userinput} - leap year')
+            else:
+                print(f'{userinput} - not a leap year')
+        else:
+            print(f'{userinput} - leap year')
+else:
+    print(f'{userinput} - not a leap year')
