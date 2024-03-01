@@ -92,4 +92,29 @@ else:
 
 # Third Problem
 
+par = int(input())
+strokes = int(input())
+
+# Eagles : number of strokes is 2 less than par
+# Birdie : number of strokes is 1 less than par
+# Par : number of strokes == par
+# Bogey : number of strokes is 1 more than par
+
+counter = strokes - par
+if par < 2 and par < strokes:
+    print('Error')
+else: 
+    if counter == 1:
+        print('Bogey')
+
+if counter == -1:
+    print('Birdie')
+elif counter == -2:
+    print('Eagle')
+elif strokes == par:
+    print('Par')
+elif counter > 1:
+    print('Error')
+
+# Fourth Problem
 
