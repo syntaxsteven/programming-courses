@@ -1,1 +1,95 @@
+# (4 Quick Problems)
+
+# First Problem
+
+userinput = int(input()) # Primary as number 1 - 99, Auxiliary are 100 - 999
+counter = 0
+if userinput < 1:
+        print(f'{userinput} is not a valid interstate highway number.')
+elif userinput > 999:
+        print(f'{userinput} is not a valid interstate highway number.')
+        
+elif userinput > 0 and userinput < 100: # Primary
+    if userinput % 2 == 0:
+        print(f'I-{userinput} is primary, going east/west.')
+    else:
+        print(f'I-{userinput} is primary, going north/south.')
+
+elif userinput > 99 and userinput < 1000: # Auxiliary
+    if userinput > 9:
+        counter = str(userinput)
+        counter = int(counter[1])
+        
+    if userinput < 1:
+        print(f'{userinput} is not a valid interstate highway number.')
+        
+    elif userinput > 999:
+        print(f'{userinput} is not a valid interstate highway number.')
+        
+    elif userinput % 100 == 0:
+        print(f'{userinput} is not a valid interstate highway number.')
+    
+    elif userinput == 0:
+        counter = str(userinput)
+        counter = int(userinput[2])
+        if counter % 2 == 0:
+            print(f'I-{userinput} is auxiliary, serving I-{counter}, going east/west.')
+        else:
+            print(f'I-{userinput} is auxiliary, serving I-{counter}, going north/south.')
+        print('this is running')
+        
+    else:
+        counter = str(userinput)
+        counter = int(counter[1] + counter[2])
+        if counter % 2 == 0:
+            print(f'I-{userinput} is auxiliary, serving I-{counter}, going east/west.')
+        else: 
+            print(f'I-{userinput} is auxiliary, serving I-{counter}, going north/south.')
+
+# Second Problem
+
+input_month = input()
+input_day = int(input())
+
+if (input_month == 'March' and input_day > 19 and input_day < 32):
+    print('Spring')
+elif (input_month == 'April' and input_day > 0 and input_day < 31):
+    print('Spring')
+elif (input_month == 'May' and input_day > 0 and input_day < 32):
+    print('Spring')
+elif (input_month == 'June' and input_day > 0 and input_day < 21):
+    print('Spring')
+
+elif (input_month == 'June' and input_day > 20 and input_day < 31):
+    print('Summer')
+elif (input_month == 'July' and input_day > 0 and input_day < 32):
+    print('Summer')
+elif (input_month == 'August' and input_day > 0 and input_day < 32):
+    print('Summer')
+elif (input_month == 'September' and input_day > 0 and input_day < 22):
+    print('Summer')
+    
+elif (input_month == 'September' and input_day > 21 and input_day < 31):
+    print('Autumn')
+elif (input_month == 'October' and input_day > 0 and input_day < 32):
+    print('Autumn')
+elif (input_month == 'November' and input_day > 0 and input_day < 31):
+    print('Autumn')
+elif (input_month == 'December' and input_day > 0 and input_day < 32):
+    print('Autumn')
+    
+elif (input_month == 'December' and input_day > 20 and input_day < 32):
+    print('Winter')
+elif (input_month == 'January' and input_day > 0 and input_day < 32):
+    print('Winter')
+elif (input_month == 'Febrary' and input_day > 0 and input_day < 29):
+    print('Winter')
+elif (input_month == 'March' and input_day > 0 and input_day < 20):
+    print('Winter')
+    
+else:
+    print('Invalid')
+
+# Third Problem
+
 
