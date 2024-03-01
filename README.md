@@ -1,2 +1,2 @@
 # programming-courses
-notes and code that relate/connect to a course / class that I am taking and or learning about
+1. Just a place where I store information, notes, and code in regard to a course or book that I am working with
